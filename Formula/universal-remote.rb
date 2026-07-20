@@ -14,7 +14,8 @@ class UniversalRemote < Formula
   depends_on arch: :arm64
 
   def install
-    bin.install "universal-remote"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"universal-remote"
   end
 
   test do
