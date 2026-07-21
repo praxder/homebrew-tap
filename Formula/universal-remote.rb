@@ -16,9 +16,12 @@ class UniversalRemote < Formula
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"universal-remote"
+    # Short alias: `ur` resolves to the same launcher.
+    bin.install_symlink libexec/"universal-remote" => "ur"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/universal-remote --version")
+    assert_match version.to_s, shell_output("#{bin}/ur --version")
   end
 end
