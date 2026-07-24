@@ -6,9 +6,9 @@ class UniversalRemote < Formula
   # in `url`, the `version` line, and the `sha256` line below on every release.
   # `brew install` will NOT work until that first rewrite lands a real asset +
   # checksum.
-  url "https://github.com/praxder/universal-remote/releases/download/v1.2.0/universal-remote-macos-arm64.tar.gz"
-  version "1.2.0"
-  sha256 "dc9b69eee0dd02a85dd75f52eba30fa82a57ecffd6db5fe284fcbf5d85332ecb"
+  url "https://github.com/praxder/universal-remote/releases/download/v1.3.0/universal-remote-macos-arm64.tar.gz"
+  version "1.3.0"
+  sha256 "17d27112a2fc339feda3cd8ca948197972e7b46bef8a408f67a3cde7c361577d"
   license "MIT"
 
   depends_on arch: :arm64
